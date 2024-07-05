@@ -15,14 +15,20 @@ public enum Direction {
     }
 
     public int getDx() {
+
         return dx;
     }
 
     public int getDy() {
         return dy;
     }
-
+// определяет направление (противоположно ли оно)
     public boolean isOpposite(Direction direction) {
         return direction.dx == -dx && direction.dy == -dy;
+    }
+
+    @Override
+    public String toString() {
+        return name() + "!";
     }
 }
